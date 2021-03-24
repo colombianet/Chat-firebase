@@ -1,0 +1,7 @@
+<h3>Ingresa con tu cuenta favorita</h3>
+<div class="row">
+    <div class="col mb-3" *ngIf="!chatSvc.usuario.uid">
+        <button class="btn btn-outline-primary mr-1" (click)="entrar('google')">Google</button>
+        <button class="btn btn-outline-success" (click)="entrar('twitter')">Twitter</button>
+    </div>
+</div>
